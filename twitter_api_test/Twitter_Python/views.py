@@ -13,7 +13,7 @@ def indexPage(request):
     ids = api.followers_ids(screen_name='ninad_dadmal',count=30)
     myFollowers=[]
     for users in api.lookup_users(user_ids=ids):
-        print("https://twitter.com/{}".format(users.screen_name))
+        # print("https://twitter.com/{}".format(users.screen_name))
         myFollowers.append(users.screen_name)
     mydictonary={
         "myFollowers":myFollowers,
