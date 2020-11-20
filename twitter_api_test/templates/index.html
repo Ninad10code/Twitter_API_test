@@ -7,5 +7,13 @@
 </head>
 <body>
     <h1>Twitter API using Tweepy</h1>
+    <div class="followers">
+        <p>My Followers</p>
+        <ol>
+        {% for user in myFollowers %}
+            <li>{{user}}</li>
+        {% endfor %}
+        </ol>
+    </div>
 </body>
 </html>
