@@ -1,0 +1,28 @@
+{% extends 'index.html'%}
+{% block title %}Tweets and Location{% endblock %}
+
+
+
+{% block container1%}
+    <div class="dataTable">
+
+        
+        {% for tweet,user,location in tweet_data %}
+            
+            <div class="row">
+                <div class="col tweet">
+                    <p>{{tweet}}</p>
+                </div>
+                <div class="col user">
+                    <p>{{user}}</p>
+                </div>
+                <div class="col location">
+                    <p>{{location}}</p>
+                </div>
+            </div>
+            
+            
+        
+        {%endfor%}
+    </div>
+{% endblock %}

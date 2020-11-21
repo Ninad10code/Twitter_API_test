@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="{% static 'tweets_location.css' %}">
     <title>{% block title %}Twiter API Test{% endblock %}</title>
 </head>
 <body>
     <h1>Twitter API using Tweepy</h1>
+    {% block container1%}
     <div class="followers">
         <p>My Followers</p>
         <ol>
@@ -17,5 +19,6 @@
         {% endfor %}
         </ol>
     </div>
+    {%endblock%}
 </body>
 </html>

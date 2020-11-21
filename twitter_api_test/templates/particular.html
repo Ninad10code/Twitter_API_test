@@ -1,0 +1,22 @@
+{% extends 'tweets_location.html' %}
+{% block title %}Tweet Details{% endblock %}
+
+{% block container1 %}
+{% for id,tweet,likes in tweet_info %}
+            
+    <div class="dataTable">
+
+        <div class="row">
+            <div class="col tweet">
+                <p>{{id}}</p>
+            </div>
+            <div class="col user">
+                <p>{{tweet}}</p>
+            </div>
+            <div class="col location">
+                <p>{{likes}}</p>
+            </div>
+        </div>
+    </div>
+{%endfor%}
+{%endblock%}
