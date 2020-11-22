@@ -10,7 +10,9 @@ When a user searches for a hashtag, they can access tweets, photos, and videos a
 A new feature that Twitter recently launched is called “Moments”. Users need to create their own Moments with tweets that they like. We plan to use this feature and make it more automated. Users can be part of communities by tweeting, retweeting, and saving tweets with a particular hashtag. These communities that users choose to be a part of can be automatically added to their Moments page. They can continue to post new tweets and interact with the members even after the hashtag is no longer trending, allowing them to set the visibility of their tweets to only the members of that community.
 
 ## **Demo :**
-You can check out [this link](https://drive.google.com/drive/folders/1tgY3KLlImWbL-YkcShCgfJ5X43rBUA5b)\
-[Demo video](https://drive.google.com/file/d/1_JiQrDGXv87o2u--TGwNtJnxJFDy689C/view?usp=sharing)\
-[Final presentation video](https://youtu.be/nynNSc3SGvA) 
+You can check out :
+[Final presentation video](https://youtu.be/nynNSc3SGvA)\
+[Demo video](https://drive.google.com/file/d/1_JiQrDGXv87o2u--TGwNtJnxJFDy689C/view?usp=sharing)
+
+
 
