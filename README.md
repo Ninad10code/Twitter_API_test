@@ -1,5 +1,6 @@
 # **Codechella Hack**
 this repository is for the softWEare project
+<br>
 **Building long-lasting communities around trending hashtags, while interacting healthily.**
 ## **Inspiration:**
 Twitter communities are short-lived and primarily formed around the trending hashtags. Once those hashtags are no longer trending, the communities die out and it’s difficult to stay connected with the people you once tweeted, retweeted, and had meaningful conversations with. Thus, having mental health in mind to support the users by comparison program.
