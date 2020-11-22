@@ -1,0 +1,57 @@
+.tweetContainer{
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.tweetContainer .container{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+#tweet_input{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+}
+.dataTable{
+    margin-top: 50px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.row{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+    height: 100px;
+    /* padding: 10px 0 10px 0; */
+}
+
+.col{
+    /* display: inline-block; */
+    float: left;
+    /* padding: 3px; */
+    display: block;
+    height: 100%;
+}
+
+.col p{
+    padding: 10px;
+}
+
+.tweet{
+    background-color: #00acee;
+    color: white;
+    width: 50%;
+}
+
+.user{
+    background-color: #58D68D;
+    color: white;
+    width: 25%;
+}

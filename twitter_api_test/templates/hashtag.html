@@ -1,0 +1,38 @@
+{% extends 'group.html'%}
+
+{%block container%}
+    <div class="pageLayout">
+        <div class="tweetContainer">
+            <div class="container">
+            <form action="{% url 'updatetweet' %}" method="POST">
+                {% csrf_token %}
+    
+                <label for="tweet">Write your tweet</label>
+                <input type="text" id="tweet_input" name="tweet_input"> 
+                <input type="text" name="hashtag_value" value="{{hashtag}}" style="display: none;" >
+                <input type="text" name="pathurl" value="{{pathurl}}" style="display: none;" >
+                <button type="submit">Tweet</button>
+            </form>
+            </div>
+        </div>
+
+        <div class="dataTable">
+            
+            
+            {% for tweet,user in tweet_data %}
+            
+            <div class="row">
+                <div class="col tweet">
+                    <p>{{tweet}}</p>
+                </div>
+                <div class="col user">
+                    <p>{{user}}</p>
+                </div>
+                
+            </div>
+        
+            {%endfor%}
+            
+        </div>
+    </div>
+{% endblock%}

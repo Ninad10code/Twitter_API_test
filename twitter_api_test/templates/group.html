@@ -1,11 +1,44 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block links%}
+    <link rel="stylesheet" href="{% static 'group.css'%}">
+    <link rel="stylesheet" href="{% static 'hashtag.css'%}">
+    {%endblock%}
     <title>Twitter</title>
 </head>
 <body>
-    
+    <h1>Twitter</h1>
+    {%block container %}
+    <div class="pageLayout">
+        <div class="left">
+            <div class="feature">
+                <p>Moments</p>
+            </div>
+            <div class="feature">
+                <p>Groups</p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="heading">
+                <p>Hashtags</p>
+            </div>
+            <div class="list">
+                <a href="{% url 'codechella'%}"><p>#Codechella</p></a>
+            </div>
+            <div class="list">
+                <a href="{% url 'BlackLivesMatter'%}"><p>#BlackLivesMatter</p></a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="topic">
+                <p>Trending</p>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
 </body>
 </html>

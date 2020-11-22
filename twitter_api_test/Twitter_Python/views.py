@@ -69,4 +69,76 @@ def update(request):
 
     return redirect('tweets_loc')
 
+def group(request):
+    """
+    docstring
+    """
+    return render(request,'group.html')
+
     
+def codechella(request):
+    """
+    docstring
+    """
+    search_word="#Codechella"+"-filter:retweets"
+    date_since="2020-11-22"
+    tweets=tweepy.Cursor(api.search,q=search_word,lang="en",since=date_since).items(10)
+    # tweets_collection=[tweet.text for tweet in tweets]
+    # username_collection=[tweet.user.screen_name for tweet in tweets]
+    # location_collection=[tweet.user.location for tweet in tweets]
+
+    # Collect a list of tweets
+    # [tweet.text for tweet in tweets]
+    collection=[[tweet.text,tweet.user.screen_name] for tweet in tweets]
+    hashtag="Codechella"
+    pathurl="codechella"
+    # print(collection)
+    mydictionary={
+        # "tweets":tweets_collection,
+        "tweet_data":collection,
+        "hashtag": hashtag,
+        "pathurl": pathurl,
+        
+    }
+
+    return render(request,'hashtag.html',context=mydictionary)
+
+def blm(request):
+    """
+    docstring
+    """
+    search_word="#BlackLivesMatter"+"-filter:retweets"
+    date_since="2020-11-22"
+    tweets=tweepy.Cursor(api.search,q=search_word,lang="en",since=date_since).items(10)
+    # tweets_collection=[tweet.text for tweet in tweets]
+    # username_collection=[tweet.user.screen_name for tweet in tweets]
+    # location_collection=[tweet.user.location for tweet in tweets]
+
+    # Collect a list of tweets
+    # [tweet.text for tweet in tweets]
+    collection=[[tweet.text,tweet.user.screen_name] for tweet in tweets]
+    hashtag="BlackLivesMatter"
+    pathurl="BlackLivesMatter"
+    # print(collection)
+    mydictionary={
+        # "tweets":tweets_collection,
+        "tweet_data":collection,
+        "hashtag": hashtag,
+        "pathurl":pathurl,
+        
+    }
+
+    return render(request,'hashtag.html',context=mydictionary)
+
+def updatetweet(request):
+    """
+    
+    """
+    hashtag="#"+request.POST['hashtag_value']
+    value=request.POST['hashtag_value']
+    mytweet=request.POST['tweet_input']+" "+hashtag
+    pathurl=request.POST['pathurl']
+    # mytweet+=request.POST['hashtag']
+    api.update_status(mytweet)
+
+    return redirect(pathurl)
