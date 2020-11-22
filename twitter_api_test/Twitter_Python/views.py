@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect,render
 from django.http import HttpResponse,JsonResponse
 import tweepy
 from . import config
@@ -61,3 +61,12 @@ def particular(request):
     #     print(info.id)
     #     print(info.full_text)
     #     print('\n')
+
+def update(request):
+    
+    mytweet=request.POST['tweet_input']+" #Codechella"
+    api.update_status(mytweet)
+
+    return redirect('tweets_loc')
+
+    

@@ -25,4 +25,13 @@
         
         {%endfor%}
     </div>
+    <div class="form">
+        <form action="{% url 'update' %}" method="POST">
+            {% csrf_token %}
+
+            <label for="tweet">Write your tweet</label>
+            <input type="text" id="tweet_input" name="tweet_input"> 
+            <button type="submit">Tweet</button>
+        </form>
+    </div>
 {% endblock %}

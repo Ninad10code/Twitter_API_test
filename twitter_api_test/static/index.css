@@ -39,3 +39,28 @@ li{
     border: 0 solid;
     border-radius: 10px;
 }
+
+.hlPAsy {
+    display: flex;
+    height: 100%;
+    width: 25%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+.eSwYtm {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    height: 100%;
+    width: 250px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.fxWvvr {
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
